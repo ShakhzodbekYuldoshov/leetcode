@@ -1,7 +1,6 @@
 class Solution:
     def interpret(self, command: str) -> str:
-        print(command.split(')'))
-        return ''.join(['o' if letter == '(' else letter.replace('(', '') for letter in command.split(')')])
+        return command.replace('()', 'o').replace('(', '').replace(')', '')
 
 
 solution = Solution()
