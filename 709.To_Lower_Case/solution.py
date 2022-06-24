@@ -28,6 +28,7 @@ class Solution:
             'Y':'y',
             'Z':'z'
         }
+        return letters.values()
         return ''.join([letters[letter] if letter in letters.keys() else letter for letter in s])
         # another way
         return s.lower()
